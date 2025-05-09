@@ -6,7 +6,7 @@ pip install -r requirements.txt
 
 após isso se faz necessario rodar cada um dos microserviços isoladamente com:
 
-uvicorn catalog_service:app --host 0.0.0.1
+uvicorn catalog_service:app --host 0.0.0.0 --port 8001
 
 uvicorn order_service:app --reload --port 8002
 
